@@ -1,4 +1,5 @@
 import React from 'react';
+import LoadableImage from '../LoadableImage/LoadableImage';
 import s from './ItemsGrid.module.css';
 
 const ItemsGrid = props => {
@@ -6,7 +7,7 @@ const ItemsGrid = props => {
 		<div className={s.container}>
 			{props.data.map((item, id) => (
 				<div key={id} className={s.item}>
-					<img src={item} alt='' />
+					<LoadableImage src={item} />
 				</div>
 			))}
 		</div>

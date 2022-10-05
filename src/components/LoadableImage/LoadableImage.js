@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import s from './LoadableImage.module.css';
 import cn from 'classnames';
 
 const LoadableImage = ({ src, alt = '', onLoad = () => {} }) => {
 	const [isLoaded, setIsLoaded] = useState(false);
+	const imageRef = useRef(null);
+
+	useEffect(() => {
+		if (imageRef.current) {
+			imageRef.current.onload = () => setIsLoaded(true);
+		}
+	}, []);
 
 	return (
 		<div
@@ -12,6 +19,7 @@ const LoadableImage = ({ src, alt = '', onLoad = () => {} }) => {
 			})}
 		>
 			<img
+				ref={imageRef}
 				className={cn(s.image, {
 					[s.imageLoaded]: isLoaded,
 				})}
