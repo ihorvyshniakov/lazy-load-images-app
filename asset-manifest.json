@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lazy-load-images-app/static/css/main.2b1f47c5.css",
+    "main.js": "/lazy-load-images-app/static/js/main.fe99aea7.js",
+    "static/js/787.e7bf478b.chunk.js": "/lazy-load-images-app/static/js/787.e7bf478b.chunk.js",
+    "index.html": "/lazy-load-images-app/index.html",
+    "main.2b1f47c5.css.map": "/lazy-load-images-app/static/css/main.2b1f47c5.css.map",
+    "main.fe99aea7.js.map": "/lazy-load-images-app/static/js/main.fe99aea7.js.map",
+    "787.e7bf478b.chunk.js.map": "/lazy-load-images-app/static/js/787.e7bf478b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b1f47c5.css",
+    "static/js/main.fe99aea7.js"
+  ]
+}
