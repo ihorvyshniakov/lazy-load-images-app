@@ -1,3 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 50px;
+}
+
+h4 {
+	font-size: 0.8rem;
+}
+
 .App {
-	padding: 250px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+.block {
+	padding: 20px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.scrollIcon {
+	position: relative;
+	width: 200px;
+	height: 240px;
+	margin-top: 20px;
+}
+
+.scrollIcon > svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: white;
+	width: 200px;
+	height: 200px;
+	animation: slide 1s linear infinite alternate-reverse;
+}
+
+@keyframes slide {
+	from {
+		margin-top: 40px;
+	}
+	from {
+		margin-top: 20px;
+	}
+}
+
+.topBlock {
+	height: calc(100vh - 40px);
+	background: rgb(34, 193, 195);
+	background: linear-gradient(
+		24deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(253, 187, 45, 1) 100%
+	);
+}
+
+.middleBlock {
+	background: rgb(94, 195, 34);
+	background: linear-gradient(
+		356deg,
+		rgba(94, 195, 34, 1) 0%,
+		rgba(45, 241, 253, 1) 100%
+	);
+}
+
+.bottomBlock {
+	height: calc(100vh - 40px);
+	background: rgb(247, 69, 69);
+	background: linear-gradient(
+		20deg,
+		rgba(247, 69, 69, 1) 50%,
+		rgba(250, 174, 65, 1) 100%
+	);
 }

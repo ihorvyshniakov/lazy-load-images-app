@@ -32,7 +32,7 @@ const LoadableImage = ({ src, alt = '', onLoad = () => {} }) => {
 				<img
 					ref={imageRef}
 					className={cn(s.image, {
-						[s.imageLoaded]: isLoaded,
+						[s.imageLoaded]: true,
 					})}
 					src={src}
 					alt={alt}
