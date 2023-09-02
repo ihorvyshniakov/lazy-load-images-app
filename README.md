@@ -1,4 +1,4 @@
-# [Lazy load images app](http://my-portfolio.cf/lazy-load-images-app)
+# [Lazy load images app](https://ihorvyshniakov.github.io/lazy-load-images-app)
 
 © 2022 Developed by Vyshniakov Ihor.
 
